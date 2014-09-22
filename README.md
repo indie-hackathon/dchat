@@ -1,6 +1,6 @@
-# Draw It!
+# dChat!
 
-Draw it lets you send drawings to your friends. Just sync with your Twitter account and start sharing.
+dChat lets you send drawings to your friends. Just sync with your Twitter account and start sharing.
 
 ## Prerequisites
 * Node.js - Download and Install [Node.js](http://www.nodejs.org/download/).
