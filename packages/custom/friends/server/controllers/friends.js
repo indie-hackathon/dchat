@@ -37,6 +37,11 @@ exports.add = function(req, res, next) {
     if (user) {
       status = 1;
       recordToSave.image = user.twitter.profile_image_url;
+      recordToSave.active = true;
+    } else {
+      status = 0;
+      recordToSave.image = 'http://placehold.it/88x88';
+      recordToSave.active = false;
     }
 
     User.update({

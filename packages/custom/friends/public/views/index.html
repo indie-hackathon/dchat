@@ -2,7 +2,7 @@
   <div class="" data-ng-controller="FriendsController" data-ng-init="find()">
     <ul class="friends">
       <li data-ng-repeat="friend in friends">
-        <a href="#">
+        <a ui-sref="draw({ friend: friend.username })">
           <img data-ng-src="{{friend.image || scope.default_image}}" alt="">
           <span class="name">@{{friend.username}}</span>
           <!-- <span class="messages">5</span> -->
