@@ -1,0 +1,19 @@
+<main>
+  <div class="" data-ng-controller="FriendsController" data-ng-init="find()">
+    <ul class="friends">
+      <li data-ng-repeat="friend in friends">
+        <a href="#">
+          <img data-ng-src="{{friend.image || scope.default_image}}" alt="">
+          <span class="name">@{{friend.username}}</span>
+          <!-- <span class="messages">5</span> -->
+        </a>
+      </li>
+    </ul>
+    <p data-ng-hide="!friends || friends.length" style="font-size: 1.3em; padding: 1em; text-align: center;">
+      Seems like you don't have any friends yet. Why don't you start adding people here?
+      &#8595;
+    </p>
+  </div>
+</main>
+
+<div class="action addfriend"><a ui-sref="add a friend">Add Friend</a></div>

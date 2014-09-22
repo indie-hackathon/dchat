@@ -1,0 +1,159 @@
+html {
+  font-size: 17px;
+  height: 100%;
+}
+body {
+  color: #fff;
+  background: linear-gradient(#26d0ce, #1a2980);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Helvetica Neue", Roboto, Sans-serif;
+  overflow: hidden;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+header {
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 8px;
+  line-height: 32px;
+  overflow: hidden;
+  border-bottom: 5px solid rgba(255,255,255,0.4);
+}
+h1 {
+  font-size: 1rem;
+  float: left;
+  margin: 0;
+}
+nav {
+  float: right;
+}
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  display: block;
+  width: 32px;
+  height: 0;
+  padding-top: 32px;
+  overflow: hidden;
+  opacity: 0.5;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+nav .active {
+  opacity: 1;
+}
+nav .friends {
+  background-image: url("/system/assets/img/nav-friends.png");
+}
+nav .notifications {
+  background-image: url("/system/assets/img/nav-notifications.png");
+}
+nav .settings {
+  background-image: url("/system/assets/img/nav-settings.png");
+}
+main {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  bottom: 48px;
+  left: 0;
+  margin-top: 5px;
+  overflow: auto;
+}
+.action {
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.addfriend a,
+.reply a {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  line-height: 32px;
+}
+ul.friends {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.friends li {
+  overflow: hidden;
+}
+ul.friends a {
+  display: block;
+  padding: 8px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.1);
+}
+ul.friends a:hover {
+  background: rgba(255,255,255,0.3);
+}
+ul.friends img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 8px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+ul.friends .name {
+  float: left;
+  line-height: 40px;
+}
+ul.friends .messages {
+  float: right;
+  background: rgba(255,255,255,0.3);
+  width: 32px;
+  line-height: 32px;
+  margin: 4px 0;
+  text-align: center;
+  border-radius: 50%;
+}
+ul.conversation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.conversation li {
+  position: relative;
+  margin: 20px 20px 0 20px;
+}
+ul.conversation a.delete {
+  position: absolute;
+  top: -11px;
+  right: -11px;
+  width: 40px;
+  padding-top: 40px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #26d0ce;
+  border: 2px solid #fff;
+  background-image: url("/system/assets/img/conversation-delete.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  display: block;
+}
+ul.conversation img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
