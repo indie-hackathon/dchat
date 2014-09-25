@@ -1,5 +1,5 @@
 'use strict';
-draw.factory('drawit', ['coder', function (coder) {
+angular.module('mean.draw').factory('drawit', ['coder', function (coder) {
     var sketches = [],
         ctx,
         element,
@@ -78,7 +78,7 @@ draw.factory('drawit', ['coder', function (coder) {
     }
 }]);
 
-draw.factory('coder', function () {
+angular.module('mean.draw').factory('coder', function () {
     var encoder = function () {
             return btoa(JSON.stringify(arguments[0]));
         },

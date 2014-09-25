@@ -1,6 +1,5 @@
 'use strict';
-var draw = angular.module('draw', []);
-draw.directive('drawable', ['$compile', 'drawit','coder', function ($compile, drawit, coder) {
+angular.module('mean.draw').directive('drawable', ['$compile', 'drawit','coder', function ($compile, drawit, coder) {
     return {
         restrict: 'E',
         template: '<canvas style="border: 1px solid">'+
@@ -62,7 +61,7 @@ draw.directive('drawable', ['$compile', 'drawit','coder', function ($compile, dr
     }
 }]);
 
-draw.directive('sender', function () {
+angular.module('mean.draw').directive('sender', function () {
     return {
         restrict: 'E',
         require: '^drawable',
@@ -75,7 +74,7 @@ draw.directive('sender', function () {
     }
 });
 
-draw.directive('cleaner', function () {
+angular.module('mean.draw').directive('cleaner', function () {
     return {
         restrict: 'E',
         require: '^drawable',
